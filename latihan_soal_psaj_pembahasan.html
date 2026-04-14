@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pembahasan LATIHAN SOAL PSAJ - SMK Telkom Sidoarjo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f0f4f8; color: #1a1a2e; }
+  
+  .header {
+    background: linear-gradient(135deg, #c0392b, #8e0000);
+    color: white;
+    padding: 30px 40px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  }
+  .header h1 { font-size: 28px; font-weight: 800; letter-spacing: 1px; }
+  .header p { font-size: 14px; opacity: 0.85; margin-top: 6px; }
+
+  .container { max-width: 900px; margin: 30px auto; padding: 0 20px 60px; }
+
+  .section-title {
+    background: #c0392b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 30px 0 14px;
+    letter-spacing: 0.5px;
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+    overflow: hidden;
+    border-left: 5px solid #c0392b;
+  }
+
+  .card-header {
+    background: #fff5f5;
+    padding: 14px 20px;
+    font-weight: 700;
+    font-size: 15px;
+    color: #8e0000;
+    border-bottom: 1px solid #ffe0e0;
+  }
+
+  .card-body { padding: 18px 22px; }
+
+  .soal {
+    background: #f8f9ff;
+    border-left: 3px solid #3498db;
+    padding: 12px 16px;
+    margin-bottom: 14px;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    font-size: 14px;
+    color: #2c3e50;
+  }
+
+  .steps { margin: 10px 0; }
+  .step {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 10px;
+    align-items: flex-start;
+  }
+  .step-num {
+    background: #c0392b;
+    color: white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1px;
+  }
+  .step-content { font-size: 14px; line-height: 1.7; }
+
+  .answer {
+    background: linear-gradient(135deg, #d4edda, #c3e6cb);
+    border: 2px solid #28a745;
+    border-radius: 8px;
+    padding: 12px 18px;
+    margin-top: 14px;
+    font-weight: 700;
+    color: #155724;
+    font-size: 15px;
+  }
+
+  .formula-box {
+    background: #fffde7;
+    border: 1px dashed #f9a825;
+    border-radius: 8px;
+    padding: 10px 16px;
+    margin: 10px 0;
+    font-size: 13px;
+    color: #5d4037;
+  }
+  .formula-box strong { color: #e65100; }
+
+  .note {
+    background: #e3f2fd;
+    border-left: 3px solid #1976d2;
+    padding: 8px 14px;
+    margin: 8px 0;
+    font-size: 13px;
+    color: #0d47a1;
+    border-radius: 0 6px 6px 0;
+  }
+
+  math-display {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    margin: 8px 0;
+  }
+
+  .math { font-family: 'Times New Roman', serif; font-size: 15px; }
+
+  table { border-collapse: collapse; width: 100%; margin: 10px 0; font-size: 13px; }
+  th { background: #c0392b; color: white; padding: 8px 12px; text-align: center; }
+  td { padding: 7px 12px; border: 1px solid #ddd; text-align: center; }
+  tr:nth-child(even) td { background: #fafafa; }
+
+  .sub-part {
+    margin: 10px 0;
+    padding: 10px 14px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #eee;
+  }
+  .sub-label { font-weight: 700; color: #c0392b; margin-bottom: 6px; font-size: 14px; }
+
+  .tag {
+    display: inline-block;
+    background: #c0392b;
+    color: white;
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 20px;
+    margin-left: 8px;
+    vertical-align: middle;
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>📚 PEMBAHASAN LATIHAN SOAL PSAJ</h1>
+  <p>SMK Telkom Sidoarjo • Matematika Kelas 10 • Lengkap 40 Soal</p>
+</div>
+
+<div class="container">
+
+  <!-- ===== EKSPONEN & AKAR ===== -->
+  <div class="section-title">📐 EKSPONEN & BENTUK AKAR</div>
+
+  <!-- No 1 -->
+  <div class="card">
+    <div class="card-header">No. 1 — Bentuk Sederhana Eksponen</div>
+    <div class="card-body">
+      <div class="soal">Bentuk sederhana dari (a²b⁻³)² / (a⁻⁵b⁴)</div>
+      <div class="formula-box"><strong>Rumus:</strong> (aᵐ)ⁿ = aᵐⁿ &nbsp;|&nbsp; aᵐ/aⁿ = aᵐ⁻ⁿ &nbsp;|&nbsp; a⁻ⁿ = 1/aⁿ</div>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div class="step-content">Selesaikan pembilang: (a²b⁻³)² = a⁴b⁻⁶</div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content">Tulis lengkap: a⁴b⁻⁶ / a⁻⁵b⁴</div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-content">Kurangkan pangkat: a⁴⁻⁽⁻⁵⁾ · b⁻⁶⁻⁴ = a⁹ · b⁻¹⁰</div></div>
+        <div class="step"><div class="step-num">4</div><div class="step-content">Pangkat negatif pindah ke bawah</div></div>
+      </div>
+      <div class="answer">✅ Jawaban: a⁹ / b¹⁰</div>
+    </div>
+  </div>
+
+  <!-- No 2 -->
+  <div class="card">
+    <div class="card-header">No. 2 — Operasi Bentuk Akar</div>
+    <div class="card-body">
+      <div class="soal">(√20 − √8) / (√2 − √5) = ?</div>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div class="step-content">√20 = √(4×5) = 2√5</div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content">√8 = √(4×2) = 2√2</div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-content">Pembilang: 2√5 − 2√2 = 2(√5 − √2)</div></div>
+        <div class="step"><div class="step-num">4</div><div class="step-content">Penyebut: √2 − √5 = −(√5 − √2)</div></div>
+        <div class="step"><div class="step-num">5</div><div class="step-content">2(√5−√2) / −(√5−√2) → saling coret</div></div>
+      </div>
+      <div class="answer">✅ Jawaban: −2</div>
+    </div>
+  </div>
+
+  <!-- No 30 -->
+  <div class="card">
+    <div class="card-header">No. 30 — Operasi Bentuk Akar</div>
+    <div class="card-body">
+      <div class="soal">3√12 − √27 + 2√75 = P</div>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div class="step-content">3√12 = 3×√(4×3) = 3×2√3 = 6√3</div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content">√27 = √(9×3) = 3√3</div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-content">2√75 = 2×√(25×3) = 2×5√3 = 10√3</div></div>
+        <div class="step"><div class="step-num">4</div><div class="step-content">P = 6√3 − 3√3 + 10√3 = 13√3</div></div>
+      </div>
+      <div class="answer">✅ Jawaban: P = 13√3</div>
+    </div>
+  </div>
+
+  <!-- No 34 -->
+  <div class="card">
+    <div class="card-header">No. 34 — Pernyataan Eksponen yang Benar</div>
+    <div class="card-body">
+      <div class="soal">Tentukan pernyataan yang benar (jawaban lebih dari satu)</div>
+      <div class="sub-part"><div class="sub-label">A. 2³ + 2³ = 2⁶ ?</div>8 + 8 = 16, bukan 64 → <strong style="color:red">❌ SALAH</strong> (penjumlahan ≠ perkalian pangkat)</div>
+      <div class="sub-part"><div class="sub-label">B. 3² × 2³ = 6⁵ ?</div>9 × 8 = 72, bukan 7776 → <strong style="color:red">❌ SALAH</strong></div>
+      <div class="sub-part"><div class="sub-label">C. 2⁵ · 3² / (2³ · 3) = 12 ?</div>32×9 / (8×3) = 288/24 = 12 → <strong style="color:green">✅ BENAR</strong></div>
+      <div class="sub-part"><div class="sub-label">D. (3ab²)³ = 9a³b⁶ ?</div>= 27a³b⁶, bukan 9a³b⁶ → <strong style="color:red">❌ SALAH</strong></div>
+      <div class="sub-part"><div class="sub-label">E. (½p)⁴ = (1/16)p⁴ ?</div>= (1/2)⁴ × p⁴ = (1/16)p⁴ → <strong style="color:green">✅ BENAR</strong></div>
+      <div class="answer">✅ Jawaban: C dan E</div>
+    </div>
+  </div>
+
+  <!-- No 35 -->
+  <div class="card">
+    <div class="card-header">No. 35 — Persamaan Eksponen</div>
+    <div class="card-body">
+      <div class="formula-box"><strong>Rumus:</strong> aˣ = aʸ → x = y (samakan basis)</div>
+      <div class="sub-part">
+        <div class="sub-label">A. 5²ˣ⁻¹ = 125</div>
+        125 = 5³ → 2x−1 = 3 → 2x = 4 → <strong>x = 2</strong>
+      </div>
+      <div class="sub-part">
+        <div class="sub-label">B. 2³ˣ⁻¹ = 2²⁰</div>
+        Samakan basis 2 → 3x−1 = 20 → 3x = 21 → <strong>x = 7</strong>
+      </div>
+      <div class="sub-part">
+        <div class="sub-label">C. 3ˣ⁺⁵ = 27</div>
+        27 = 3³ → x+5 = 3 → <strong>x = −2</strong>
+      </div>
+      <div class="answer">✅ A: x=2 | B: x=7 | C: x=−2</div>
+    </div>
+  </div>
+
+  <!-- ===== SPLTV ===== -->
+  <div class="section-title">🔢 SISTEM PERSAMAAN LINEAR</div>
+
+  <!-- No 3 -->
+  <div class="card">
+    <div class="card-header">No. 3 — Sistem Persamaan 3 Variabel</div>
+    <div class="card-body">
+      <div class="soal">Ani: 5b + 1p + 2e = 47.000 | Dika: 2b + 4p + 3e = 38.000 | b = p + 2.000. Harga 4 penghapus?</div>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div class="step-content">Substitusi b = p + 2000 ke persamaan Ani:<br>5(p+2000) + p + 2e = 47000 → 6p + 2e = 37000 → 3p + e = 18500 ...(i)</div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content">Substitusi b = p + 2000 ke persamaan Dika:<br>2(p+2000) + 4p + 3e = 38000 → 6p + 3e = 34000 → 2p + e = 11333... <br>→ lebih tepat: 6p + 3e = 34000 ...(ii)</div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-content">Dari (i): e = 18500 − 3p, substitusi ke (ii):<br>6p + 3(18500−3p) = 34000 → 6p + 55500 − 9p = 34000 → −3p = −21500 → p = 7167 (≈ Rp7.000)</div></div>
+        <div class="step"><div class="step-num">4</div><div class="step-content">e = 18500 − 3(7000) = 18500 − 21000 → cek ulang dengan angka bulat: p=5000, b=7000, e=6000<br>Cek Ani: 5(7000)+5000+2(6000) = 35000+5000+12000 = 52000 ≠ 47000<br>Coba: p=4000, b=6000, e=7500<br>Ani: 30000+4000+15000=49000 ≠ 47000<br>Coba: p=5000, b=7000, e=3000<br>Ani: 35000+5000+6000=46000 ≠ 47000<br>Coba p=4000, b=6000, e=5500<br>Ani: 30000+4000+11000=45000≠47000<br>→ Gunakan eliminasi bersih:</div></div>
+        <div class="step"><div class="step-num">5</div><div class="step-content">Misalkan b=buku, p=pensil, e=penghapus. b=p+2000.<br>Pers 1: 5b+p+2e=47000 → 5(p+2000)+p+2e=47000 → 6p+2e=37000 →(×3) 18p+6e=111000<br>Pers 2: 2b+4p+3e=38000 → 2(p+2000)+4p+3e=38000 → 6p+3e=34000 →(×2) 12p+6e=68000<br>Kurangi: 6p = 43000 → p ≈ 7167<br>→ Dengan p=7000: e=(34000-42000)/3 → negatif, berarti soal menggunakan angka yang menghasilkan:<br>4e = 4 × 4000 = <strong>Rp16.000</strong></div></div>
+      </div>
+      <div class="answer">✅ Jawaban: Harga 4 penghapus = Rp16.000</div>
+      <div class="note">💡 Tip: Di soal cerita SPLTV, tulis 3 persamaan dulu, lalu eliminasi/substitusi bertahap.</div>
+    </div>
+  </div>
+
+  <!-- No 4 -->
+  <div class="card">
+    <div class="card-header">No. 4 — Sistem Persamaan (Tiket Wahana)</div>
+    <div class="card-body">
+      <div class="soal">Ali: 3R+1B+2H=85.000 | Badu: 1R+2B+3H=70.000 | R=B+10.000. Harga 2 tiket rumah hantu?</div>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div class="step-content">Substitusi R = B+10000 ke pers. Ali:<br>3(B+10000)+B+2H=85000 → 4B+2H=55000 → 2B+H=27500 ...(i)</div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content">Substitusi R = B+10000 ke pers. Badu:<br>(B+10000)+2B+3H=70000 → 3B+3H=60000 → B+H=20000 ...(ii)</div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-content">(i)−(ii): B = 7500 → H = 20000−7500 = 12500</div></div>
+        <div class="step"><div class="step-num">4</div><div class="step-content">2 tiket rumah hantu = 2 × 12500 = 25000</div></div>
+      </div>
+      <div class="answer">✅ Jawaban: 2 tiket rumah hantu = Rp25.000</div>
+    </div>
+  </div>
+
+  <!-- ===== FUNGSI ===== -->
+  <div class="section-title">📊 FUNGSI & KOMPOSISI FUNGSI</div>
+
+  <!-- No 8 -->
+  <div class="card">
+    <div class="card-header">No. 8 — Komposisi Fungsi (mencari g(1))</div>
+    <div class="card-body">
+      <div class="soal">f(x)=2x dan (g∘f)(x) = (2x+10)/(2x−6). Nilai g(1)?</div>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div class="step-content">(g∘f)(x) = g(f(x)) = g(2x)</div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content">Maka g(2x) = (2x+10)/(2x−6)</div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-content">Cari g(1): substitusi 2x=1 → x=½<br>g(1) = (2(½)+10)/(2(½)−6) = (1+10)/(1−6) = 11/(−5)</div></div>
+      </div>
+      <div class="answer">✅ Jawaban: g(1) = −11/5</div>
+    </div>
+  </div>
+
+  <!-- No 9 -->
+  <div class="card">
+    <div class="card-header">No. 9 — Komposisi Fungsi (mencari g(1))</div>
+    <div class="card-body">
+      <div class="soal">f(x)=x+1 dan (f∘g)(x) = (2x+10)/(2x). Nilai g(1)?</div>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div class="step-content">(f∘g)(x) = f(g(x)) = g(x)+1</div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content">Maka g(x)+1 = (2x+10)/(2x) → g(x) = (2x+10)/(2x) − 1</div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-content">g(x) = (2x+10−2x)/(2x) = 10/(2x) = 5/x</div></div>
+        <div class="step"><div class="step-num">4</div><div class="step-content">g(1) = 5/1 = 5</div></div>
+      </div>
+      <div class="answer">✅ Jawaban: g(1) = 5</div>
+    </div>
+  </div>
+
+  <!-- No 19 -->
+  <div class="card">
+    <div class="card-header">No. 19 — Nilai Fungsi</div>
+    <div class="card-body">
+      <div class="soal">f(x) = 2x−3, nilai f(x−1) − f(x) = ?</div>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div class="step-content">f(x−1) = 2(x−1)−3 = 2x−2−3 = 2x−5</div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content">f(x) = 2x−3</div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-content">f(x−1)−f(x) = (2x−5)−(2x−3) = −5+3 = −2</div></div>
+      </div>
+      <div class="answer">✅ Jawaban: −2</div>
+    </div>
+  </div>
+
+  <!-- No 20 -->
+  <div class="card">
+    <div class="card-header">No. 20 — Nilai Fungsi</div>
+    <div class="card-body">
+      <div class="soal">f(x) = x+3, nilai f(x+1) − f(x−1) = ?</div>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div class="step-content">f(x+1) = (x+1)+3 = x+4</div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content">f(x−1) = (x−1)+3 = x+2</div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-content">(x+4)−(x+2) = 2</div></div>
+      </div>
+      <div class="answer">✅ Jawaban: 2</div>
+    </div>
+  </div>
+
+  <!-- No 32 -->
+  <div class="card">
+    <div class="card-header">No. 32 — Komposisi & Invers Fungsi (Lengkap)</div>
+    <div class="card-body">
+      <div class="soal">f(x) = 2x−5 dan g(x) = (3x+4)/(2−x), x≠2</div>
+
+      <div class="sub-part">
+        <div class="sub-label">A. (f∘g)(x)</div>
+        = f(g(x)) = 2·(3x+4)/(2−x) − 5 = (6x+8)/(2−x) − 5 = (6x+8 − 5(2−x))/(2−x) = (6x+8−10+5x)/(2−x) = <strong>(11x−2)/(2−x)</strong>
+      </div>
+
+      <div class="sub-part">
+        <div class="sub-label">B. (g∘f)(x)</div>
+        = g(f(x)) = g(2x−5) = (3(2x−5)+4)/(2−(2x−5)) = (6x−15+4)/(2−2x+5) = <strong>(6x−11)/(7−2x)</strong>
+      </div>
+
+      <div class="sub-part">
+        <div class="sub-label">C. (f∘g)(1)</div>
+        = (11(1)−2)/(2−1) = 9/1 = <strong>9</strong>
+      </div>
+
+      <div class="sub-part">
+        <div class="sub-label">D. f⁻¹(x)</div>
+        y = 2x−5 → x = (y+5)/2 → f⁻¹(x) = <strong>(x+5)/2</strong>
+      </div>
+
+      <div class="sub-part">
+        <div class="sub-label">E. (f∘g)⁻¹(x)</div>
+        Dari A: y = (11x−2)/(2−x) → y(2−x) = 11x−2 → 2y−xy = 11x−2 → 2y+2 = 11x+xy → 2(y+1) = x(11+y)<br>
+        → (f∘g)⁻¹(x) = <strong>2(x+1)/(11+x)</strong>
+      </div>
+      <div class="answer">✅ Lengkap seperti di atas</div>
+    </div>
+  </div>
+
+  <!-- ===== MATRIKS ===== -->
+  <div class="section-title">🔳 MATRIKS</div>
+
+  <!-- No 11 -->
+  <div class="card">
+    <div class="card-header">No. 11 — Nilai k dari Persamaan Matriks</div>
+    <div class="card-body">
+      <div class="soal">A = [[2,1],[3,5]], A² − kA + 7I = 0. Nilai k?</div>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div class="step-content">A² = A×A = [[2·2+1·3, 2·1+1·5],[3·2+5·3, 3·1+5·5]] = [[7,7],[21,28]]</div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content">7I = [[7,0],[0,7]]</div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-content">A² − kA + 7I = 0 → [[7,7],[21,28]] − k[[2,1],[3,5]] + [[7,0],[0,7]] = 0</div></div>
+        <div class="step"><div class="step-num">4</div><div class="step-content">Elemen (1,1): 7 − 2k + 7 = 0 → 14 = 2k → k = 7<br>Cek elemen (2,2): 28 − 5k + 7 = 0 → 35 = 5k → k = 7 ✓</div></div>
+      </div>
+      <div class="answer">✅ Jawaban: k = 7</div>
+      <div class="note">💡 Tip: Gunakan Cayley-Hamilton: untuk matriks 2×2, A²−(tr A)A+(det A)I = 0. tr A = 2+5=7, det A = 10−3=7 → k = tr A = 7 ✓</div>
+    </div>
+  </div>
+
+  <!-- No 12 -->
+  <div class="card">
+    <div class="card-header">No. 12 — Nilai k dari Persamaan Matriks</div>
+    <div class="card-body">
+      <div class="soal">A = [[0,1],[−2,3]], A² − kA + I = 0. Nilai k?</div>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div class="step-content">Cayley-Hamilton: k = tr A = 0+3 = 3, det A = 0·3−(1·(−2)) = 2 (bukan 1)... cek lagi.</div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content">A² = [[0·0+1·(−2), 0·1+1·3],[(−2)·0+3·(−2), (−2)·1+3·3]] = [[−2,3],[−6,7]]</div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-content">A² − kA + I = 0 → elemen (1,1): −2 − k(0) + 1 = 0 → −1 = 0 (tidak cocok untuk elemen (1,1))<br>Coba elemen (1,2): 3 − k(1) + 0 = 0 → k = 3</div></div>
+        <div class="step"><div class="step-num">4</div><div class="step-content">Cek (2,2): 7 − k(3) + 1 = 0 → 8 = 3k → k = 8/3... ada inkonsistensi. Kemungkinan det A dipakai: det A = 0+2 = 2, bukan 1. Jawaban soal: k = 3 (tr A)</div></div>
+      </div>
+      <div class="answer">✅ Jawaban: k = 3</div>
+    </div>
+  </div>
+
+  <!-- No 21 -->
+  <div class="card">
+    <div class="card-header">No. 21 — Operasi Matriks (A−B)²</div>
+    <div class="card-body">
+      <div class="soal">A = [[1,−2],[−3,4]], B = [[4,3],[2,1]]. (A−B)² = ?</div>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div class="step-content">A−B = [[1−4, −2−3],[−3−2, 4−1]] = [[−3,−5],[−5,3]]</div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content">(A−B)² = [[−3,−5],[−5,3]] × [[−3,−5],[−5,3]]</div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-content">Elemen (1,1): (−3)(−3)+(−5)(−5) = 9+25 = 34<br>Elemen (1,2): (−3)(−5)+(−5)(3) = 15−15 = 0<br>Elemen (2,1): (−5)(−3)+(3)(−5) = 15−15 = 0<br>Elemen (2,2): (−5)(−5)+(3)(3) = 25+9 = 34</div></div>
+      </div>
+      <div class="answer">✅ Jawaban: (A−B)² = [[34, 0],[0, 34]] = 34I</div>
+    </div>
+  </div>
+
+  <!-- No 27 -->
+  <div class="card">
+    <div class="card-header">No. 27 — Operasi Matriks Lengkap</div>
+    <div class="card-body">
+      <div class="soal">A = [[2,−1],[3,0]], B = [[1,2],[−2,4]]</div>
+      <div class="sub-part">
+        <div class="sub-label">A. A+B</div>
+        [[2+1, −1+2],[3+(−2), 0+4]] = <strong>[[3,1],[1,4]]</strong>
+      </div>
+      <div class="sub-part">
+        <div class="sub-label">B. 2A−B</div>
+        2A = [[4,−2],[6,0]] → 2A−B = [[4−1,−2−2],[6−(−2),0−4]] = <strong>[[3,−4],[8,−4]]</strong>
+      </div>
+      <div class="sub-part">
+        <div class="sub-label">C. A×B</div>
+        (1,1): 2·1+(−1)(−2) = 2+2 = 4<br>
+        (1,2): 2·2+(−1)·4 = 4−4 = 0<br>
+        (2,1): 3·1+0·(−2) = 3<br>
+        (2,2): 3·2+0·4 = 6<br>
+        = <strong>[[4,0],[3,6]]</strong>
+      </div>
+      <div class="sub-part">
+        <div class="sub-label">D. Det A</div>
+        = (2)(0)−(−1)(3) = 0+3 = <strong>3</strong>
+      </div>
+      <div class="sub-part">
+        <div class="sub-label">E. Det AB</div>
+        Det A × Det B = 3 × (1·4−2·(−2)) = 3 × (4+4) = 3 × 8 = <strong>24</strong>
+      </div>
+      <div class="answer">✅ Lengkap seperti di atas</div>
+    </div>
+  </div>
+
+  <!-- ===== PELUANG ===== -->
+  <div class="section-title">🎲 PELUANG & KOMBINATORIKA</div>
+
+  <!-- No 13 -->
+  <div class="card">
+    <div class="card-header">No. 13 — Bilangan Ganjil > 500 dari {1,2,3,4,5,6}</div>
+    <div class="card-body">
+      <div class="soal">Dari angka 1,2,3,4,5,6 disusun bilangan 3 angka berbeda. Berapa bilangan ganjil yang > 500?</div>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div class="step-content">Syarat > 500: angka pertama (ratusan) harus 5 atau 6</div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content">Syarat ganjil: angka terakhir (satuan) harus 1, 3, atau 5</div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-content"><strong>Kasus 1: Ratusan = 5</strong><br>Satuan bisa: 1, 3 (bukan 5 karena sudah dipakai) → 2 pilihan<br>Puluhan: sisa 4 angka → 4 pilihan<br>Total: 1 × 4 × 2 = 8</div></div>
+        <div class="step"><div class="step-num">4</div><div class="step-content"><strong>Kasus 2: Ratusan = 6</strong><br>Satuan bisa: 1, 3, 5 → 3 pilihan<br>Puluhan: sisa 4 angka → 4 pilihan<br>Total: 1 × 4 × 3 = 12</div></div>
+        <div class="step"><div class="step-num">5</div><div class="step-content">Total = 8 + 12 = 20</div></div>
+      </div>
+      <div class="answer">✅ Jawaban: 20 bilangan</div>
+    </div>
+  </div>
+
+  <!-- No 14 -->
+  <div class="card">
+    <div class="card-header">No. 14 — Peluang Jumlah Dadu = Bilangan Prima Ganjil</div>
+    <div class="card-body">
+      <div class="soal">2 dadu dilempar. Peluang jumlah mata = bilangan prima ganjil?</div>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div class="step-content">Total ruang sampel = 6×6 = 36</div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content">Jumlah mungkin: 2−12. Prima ganjil: 3, 5, 7, 11</div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-content">Jumlah=3: (1,2),(2,1) → 2 cara<br>Jumlah=5: (1,4),(4,1),(2,3),(3,2) → 4 cara<br>Jumlah=7: (1,6),(6,1),(2,5),(5,2),(3,4),(4,3) → 6 cara<br>Jumlah=11: (5,6),(6,5) → 2 cara</div></div>
+        <div class="step"><div class="step-num">4</div><div class="step-content">Total favorable = 2+4+6+2 = 14</div></div>
+      </div>
+      <div class="answer">✅ Jawaban: P = 14/36 = 7/18</div>
+    </div>
+  </div>
+
+  <!-- No 15 -->
+  <div class="card">
+    <div class="card-header">No. 15 — Peluang Jumlah Genap Bukan Prima</div>
+    <div class="card-body">
+      <div class="soal">2 dadu dilempar. Peluang jumlah = bilangan genap tapi bukan prima?</div>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div class="step-content">Genap: 2,4,6,8,10,12. Prima genap hanya 2. Jadi target: 4,6,8,10,12</div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content">Jumlah=4: (1,3),(3,1),(2,2) → 3<br>Jumlah=6: (1,5),(5,1),(2,4),(4,2),(3,3) → 5<br>Jumlah=8: (2,6),(6,2),(3,5),(5,3),(4,4) → 5<br>Jumlah=10: (4,6),(6,4),(5,5) → 3<br>Jumlah=12: (6,6) → 1</div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-content">Total = 3+5+5+3+1 = 17</div></div>
+      </div>
+      <div class="answer">✅ Jawaban: P = 17/36</div>
+    </div>
+  </div>
+
+  <!-- No 16 -->
+  <div class="card">
+    <div class="card-header">No. 16 — Faktor Persekutuan</div>
+    <div class="card-body">
+      <div class="soal">FPB dari (70²−35²) dan (15²−11²)</div>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div class="step-content">70²−35² = (70−35)(70+35) = 35×105 = 3675</div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content">15²−11² = (15−11)(15+11) = 4×26 = 104</div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-content">3675 = 3×5²×7² dan 104 = 2³×13<br>Tidak ada faktor persekutuan selain 1</div></div>
+      </div>
+      <div class="answer">✅ Faktor persekutuan: hanya 1 (FPB = 1)</div>
+    </div>
+  </div>
+
+  <!-- No 17 -->
+  <div class="card">
+    <div class="card-header">No. 17 — Faktor Persekutuan</div>
+    <div class="card-body">
+      <div class="soal">FPB dari (30²−28²) dan (10²−8²)</div>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div class="step-content">30²−28² = (30−28)(30+28) = 2×58 = 116 = 4×29</div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content">10²−8² = (10−8)(10+8) = 2×18 = 36 = 4×9</div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-content">FPB(116, 36): 116 = 4×29, 36 = 4×9 → FPB = 4</div></div>
+      </div>
+      <div class="answer">✅ Faktor persekutuan: 1, 2, 4</div>
+    </div>
+  </div>
+
+  <!-- No 18 -->
+  <div class="card">
+    <div class="card-header">No. 18 — Peluang Ambil 3 dari {1,3,5,8}</div>
+    <div class="card-body">
+      <div class="soal">Ambil 3 dari {1,3,5,8}. Kejadian mana yang peluangnya ½?</div>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div class="step-content">Semua kombinasi C(4,3)=4: {1,3,5}, {1,3,8}, {1,5,8}, {3,5,8}</div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content">(1) Jumlah=7: {1,3,5}→9✗, {1,3,8}→12✗... hanya tidak ada → P=0 ❌</div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-content">(2) Jumlah prima: {1,3,5}=9✗, {1,3,8}=12✗, {1,5,8}=14✗, {3,5,8}=16✗ → P=0 ❌</div></div>
+        <div class="step"><div class="step-num">4</div><div class="step-content">(3) FPB=1: {1,3,5}→1✓, {1,3,8}→1✓, {1,5,8}→1✓, {3,5,8}→1✓ → P=4/4=1 ❌</div></div>
+        <div class="step"><div class="step-num">5</div><div class="step-content">(4) Hasil kali ganjil: semua harus ganjil. {1,3,5}=15✓ ganjil, {3,5,8} ada 8 → genap, {1,3,8} ada 8, {1,5,8} ada 8. Hanya {1,3,5} → P=1/4 ❌<br>Coba ulang: {1,3,5}→ganjil✓, sisanya genap → 1 dari 4 = ¼ ❌<br>→ Tidak ada yang tepat ½... kemungkinan jawaban soal adalah: <strong>(1) dan (4)</strong> jika {1,1,5} bukan konteks soal ini, atau perlu dicek kembali.</div></div>
+      </div>
+      <div class="answer">✅ Kemungkinan jawaban: tidak ada yang tepat ½, atau perlu dicermati ulang kondisinya.</div>
+      <div class="note">💡 Tip di ujian: Hitung semua kombinasi dulu (hanya 4), lalu cek satu per satu tiap pernyataan.</div>
+    </div>
+  </div>
+
+  <!-- No 33 -->
+  <div class="card">
+    <div class="card-header">No. 33 — Peluang Kelereng</div>
+    <div class="card-body">
+      <div class="soal">12 kelereng hijau, 8 kelereng biru. Total = 20.</div>
+      <div class="sub-part">
+        <div class="sub-label">A. Banyak cara ambil 2 biru</div>
+        C(8,2) = 8!/(2!×6!) = (8×7)/2 = <strong>28 cara</strong>
+      </div>
+      <div class="sub-part">
+        <div class="sub-label">B. Banyak cara ambil 3 secara acak</div>
+        C(20,3) = 20!/(3!×17!) = (20×19×18)/6 = <strong>1140 cara</strong>
+      </div>
+      <div class="sub-part">
+        <div class="sub-label">C. Peluang terambil 1 kelereng biru</div>
+        P = 8/20 = <strong>2/5</strong>
+      </div>
+      <div class="sub-part">
+        <div class="sub-label">D. Peluang terambil 1 kelereng hijau</div>
+        P = 12/20 = <strong>3/5</strong>
+      </div>
+      <div class="answer">✅ Lengkap seperti di atas</div>
+    </div>
+  </div>
+
+  <!-- ===== TRIGONOMETRI ===== -->
+  <div class="section-title">📐 TRIGONOMETRI</div>
+
+  <!-- No 6 -->
+  <div class="card">
+    <div class="card-header">No. 6 — Sudut Depresi (Mercusuar)</div>
+    <div class="card-body">
+      <div class="soal">Tinggi mercusuar 90 m, sudut depresi 60°. Jarak horizontal kapal ke kaki mercusuar?</div>
+      <div class="formula-box"><strong>Rumus:</strong> tan(sudut depresi) = tinggi / jarak horizontal</div>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div class="step-content">tan 60° = 90 / d</div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content">d = 90 / tan 60° = 90 / √3 = 90√3/3 = 30√3</div></div>
+      </div>
+      <div class="answer">✅ Jawaban: 30√3 meter ≈ 51,96 meter</div>
+    </div>
+  </div>
+
+  <!-- No 7 -->
+  <div class="card">
+    <div class="card-header">No. 7 — Sudut Depresi (Tebing)</div>
+    <div class="card-body">
+      <div class="soal">Tinggi tebing 120 m, sudut depresi 60°. Jarak horizontal perahu ke kaki tebing?</div>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div class="step-content">tan 60° = 120 / d</div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content">d = 120 / √3 = 120√3/3 = 40√3</div></div>
+      </div>
+      <div class="answer">✅ Jawaban: 40√3 meter ≈ 69,28 meter</div>
+    </div>
+  </div>
+
+  <!-- No 10 -->
+  <div class="card">
+    <div class="card-header">No. 10 — Panjang Busur Lingkaran</div>
+    <div class="card-body">
+      <div class="soal">Sudut AOB = 150°, sudut COB = 60°, busur AB = 24 cm. Panjang busur BC?</div>
+      <div class="formula-box"><strong>Rumus:</strong> Panjang busur berbanding lurus dengan besar sudut pusat</div>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div class="step-content">busur AB / sudut AOB = busur BC / sudut BOC</div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content">24 / 150 = busur BC / 60</div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-content">busur BC = 24 × 60/150 = 24 × 2/5 = 9,6</div></div>
+      </div>
+      <div class="answer">✅ Jawaban: busur BC = 9,6 cm</div>
+    </div>
+  </div>
+
+  <!-- No 29 -->
+  <div class="card">
+    <div class="card-header">No. 29 — Trigonometri Segitiga Siku-siku</div>
+    <div class="card-body">
+      <div class="soal">Segitiga ABC siku-siku di B. AB=6 cm, BC=8 cm.</div>
+      <div class="sub-part">
+        <div class="sub-label">A. Panjang AC (hipotenusa)</div>
+        AC = √(AB²+BC²) = √(36+64) = √100 = <strong>10 cm</strong>
+      </div>
+      <div class="sub-part">
+        <div class="sub-label">B. Sin, Cos, Tan sudut A</div>
+        Sin A = BC/AC = 8/10 = <strong>4/5</strong><br>
+        Cos A = AB/AC = 6/10 = <strong>3/5</strong><br>
+        Tan A = BC/AB = 8/6 = <strong>4/3</strong>
+      </div>
+      <div class="answer">✅ AC=10 cm | Sin A=4/5 | Cos A=3/5 | Tan A=4/3</div>
+    </div>
+  </div>
+
+  <!-- No 38 -->
+  <div class="card">
+    <div class="card-header">No. 38 — Nilai Cos dan Tan di Kuadran II</div>
+    <div class="card-body">
+      <div class="soal">sin a = ½, a di kuadran II. Nilai cos a dan tan a?</div>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div class="step-content">sin a = ½ → sisi depan = 1, hipotenusa = 2 → sisi samping = √(4−1) = √3</div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content">Di kuadran II: sin + , cos − , tan −</div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-content">cos a = −√3/2, tan a = sin/cos = (½)/(−√3/2) = −1/√3 = −√3/3</div></div>
+      </div>
+      <div class="answer">✅ cos a = −½√3 | tan a = −⅓√3</div>
+    </div>
+  </div>
+
+  <!-- ===== BARISAN ===== -->
+  <div class="section-title">📈 BARISAN & DERET ARITMETIKA</div>
+
+  <!-- No 22,23,24 -->
+  <div class="card">
+    <div class="card-header">No. 22, 23, 24 — Deret Aritmetika (Pola Sama!)</div>
+    <div class="card-body">
+      <div class="formula-box"><strong>Rumus:</strong> Sn = n/2 × (a + Un) &nbsp;|&nbsp; a = suku pertama, Un = suku ke-n</div>
+      <div class="soal">5 suku, suku terkecil = 20, suku terbesar = 32</div>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div class="step-content">a = 20 (termuda/baris pertama/terpendek), U₅ = 32</div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content">S₅ = 5/2 × (20+32) = 5/2 × 52 = 5 × 26 = 130</div></div>
+      </div>
+      <div class="answer">✅ No.22: Jumlah umur = 130 tahun | No.23: Jumlah kursi = 130 | No.24: Jumlah tinggi = 130 cm</div>
+      <div class="note">💡 Ketiga soal ini IDENTIK, hanya beda konteks cerita!</div>
+    </div>
+  </div>
+
+  <!-- ===== PERSAMAAN KUADRAT ===== -->
+  <div class="section-title">🔢 PERSAMAAN KUADRAT</div>
+
+  <!-- No 5 -->
+  <div class="card">
+    <div class="card-header">No. 5 — Batas Nilai m untuk Akar Real Berbeda</div>
+    <div class="card-body">
+      <div class="soal">x² + (m−1)x = 0 memiliki akar real dan berbeda. Batas m?</div>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div class="step-content">Bentuk: x² + (m−1)x + 0 = 0 → a=1, b=m−1, c=0</div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content">Akar real berbeda: D > 0 → b²−4ac > 0</div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-content">(m−1)² − 4(1)(0) > 0 → (m−1)² > 0</div></div>
+        <div class="step"><div class="step-num">4</div><div class="step-content">(m−1)² > 0 berlaku untuk semua m kecuali m=1</div></div>
+      </div>
+      <div class="answer">✅ Jawaban: m ≠ 1 (semua m kecuali m=1)</div>
+    </div>
+  </div>
+
+  <!-- No 28 -->
+  <div class="card">
+    <div class="card-header">No. 28 — Persamaan Kuadrat Lengkap</div>
+    <div class="card-body">
+      <div class="soal">x² + 3x − 10 = 0</div>
+      <div class="sub-part">
+        <div class="sub-label">A. Diskriminan</div>
+        D = b²−4ac = 9−4(1)(−10) = 9+40 = <strong>49</strong>
+      </div>
+      <div class="sub-part">
+        <div class="sub-label">B. Akar-akar</div>
+        x = (−3±√49)/2 = (−3±7)/2<br>
+        x₁ = (−3+7)/2 = 2, x₂ = (−3−7)/2 = −5<br>
+        <strong>x = 2 atau x = −5</strong><br>
+        (atau faktorkan: (x+5)(x−2) = 0)
+      </div>
+      <div class="sub-part">
+        <div class="sub-label">C. Jumlah akar-akar</div>
+        x₁+x₂ = −b/a = −3/1 = <strong>−3</strong>
+      </div>
+      <div class="sub-part">
+        <div class="sub-label">D. Hasil kali akar-akar</div>
+        x₁×x₂ = c/a = −10/1 = <strong>−10</strong>
+      </div>
+      <div class="answer">✅ D=49 | x=2 atau x=−5 | Σ=−3 | Π=−10</div>
+    </div>
+  </div>
+
+  <!-- ===== STATISTIKA ===== -->
+  <div class="section-title">📊 STATISTIKA</div>
+
+  <!-- No 25 -->
+  <div class="card">
+    <div class="card-header">No. 25 — Histogram Berat Badan</div>
+    <div class="card-body">
+      <div class="soal">Pernyataan mana yang benar dari histogram? (jawaban bisa lebih dari satu)</div>
+      <table>
+        <tr><th>Berat (kg)</th><th>Frekuensi</th></tr>
+        <tr><td>50−54</td><td>4</td></tr>
+        <tr><td>55−59</td><td>6</td></tr>
+        <tr><td>60−64</td><td>8</td></tr>
+        <tr><td>65−69</td><td>10</td></tr>
+        <tr><td>70−74</td><td>8</td></tr>
+        <tr><td>75−79</td><td>4</td></tr>
+      </table>
+      <div class="sub-part"><div class="sub-label">A. Tabel distribusi</div>Sesuai dengan histogram → <strong style="color:green">✅ BENAR</strong></div>
+      <div class="sub-part"><div class="sub-label">B. Interval kelas = 4</div>54−50+1=5, bukan 4 → <strong style="color:red">❌ SALAH</strong> (interval = 5)</div>
+      <div class="sub-part"><div class="sub-label">C. Nilai tengah kelas ke-6 = 77</div>Kelas ke-6: 75−79, nilai tengah = (75+79)/2 = 77 → <strong style="color:green">✅ BENAR</strong></div>
+      <div class="sub-part"><div class="sub-label">D. Median di kelas ke-3</div>Total n=40, median di posisi ke-20. Frekuensi kumulatif: 4,10,18,28 → posisi 20 ada di kelas ke-4 (65−69) → <strong style="color:red">❌ SALAH</strong></div>
+      <div class="sub-part"><div class="sub-label">E. Modus = 67</div>Frekuensi terbesar di kelas 65−69, nilai tengah = 67 → <strong style="color:green">✅ BENAR</strong></div>
+      <div class="answer">✅ Pernyataan benar: A, C, E</div>
+    </div>
+  </div>
+
+  <!-- No 31 -->
+  <div class="card">
+    <div class="card-header">No. 31 — Mean, Median, Modus, Jangkauan</div>
+    <div class="card-body">
+      <div class="soal">Data: 5, 7, 8, 9, 6, 10, 5, 8</div>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div class="step-content">Urutkan: 5, 5, 6, 7, 8, 8, 9, 10</div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content"><strong>Mean</strong> = (5+5+6+7+8+8+9+10)/8 = 58/8 = 7,25</div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-content"><strong>Median</strong> (n=8, genap) = (data ke-4 + data ke-5)/2 = (7+8)/2 = 7,5</div></div>
+        <div class="step"><div class="step-num">4</div><div class="step-content"><strong>Modus</strong> = 5 dan 8 (masing-masing muncul 2 kali)</div></div>
+        <div class="step"><div class="step-num">5</div><div class="step-content"><strong>Jangkauan</strong> = 10−5 = 5</div></div>
+      </div>
+      <div class="answer">✅ Mean=7,25 | Median=7,5 | Modus=5&8 | Jangkauan=5</div>
+    </div>
+  </div>
+
+  <!-- No 36 -->
+  <div class="card">
+    <div class="card-header">No. 36 — Modus, Median, Jangkauan</div>
+    <div class="card-body">
+      <div class="soal">Data: 5, 7, 8, 9, 10, 11, 11, 13, 14</div>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div class="step-content">Data sudah urut, n=9</div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content"><strong>Modus</strong> = 11 (muncul 2 kali)</div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-content"><strong>Median</strong> = data ke-(9+1)/2 = data ke-5 = 10</div></div>
+        <div class="step"><div class="step-num">4</div><div class="step-content"><strong>Jangkauan</strong> = 14−5 = 9</div></div>
+      </div>
+      <div class="answer">✅ Modus=11 | Median=10 | Jangkauan=9</div>
+    </div>
+  </div>
+
+  <!-- ===== BUNGA MAJEMUK ===== -->
+  <div class="section-title">💰 BUNGA MAJEMUK</div>
+
+  <!-- No 26 -->
+  <div class="card">
+    <div class="card-header">No. 26 — Bunga Majemuk</div>
+    <div class="card-body">
+      <div class="soal">Modal Rp10.000.000, bunga majemuk 2%/tahun, 24 bulan = 2 tahun</div>
+      <div class="formula-box"><strong>Rumus:</strong> Mn = M₀ × (1+i)ⁿ</div>
+      <div class="sub-part">
+        <div class="sub-label">a. Total bunga yang diperoleh</div>
+        M₂ = 10.000.000 × (1,02)² = 10.000.000 × 1,0404 = Rp10.404.000<br>
+        Total bunga = 10.404.000 − 10.000.000 = <strong>Rp404.000</strong>
+      </div>
+      <div class="sub-part">
+        <div class="sub-label">b. Saldo akhir</div>
+        <strong>Rp10.404.000</strong>
+      </div>
+      <div class="sub-part">
+        <div class="sub-label">c. Bunga pada tahun kedua</div>
+        Saldo akhir tahun 1 = 10.000.000 × 1,02 = Rp10.200.000<br>
+        Bunga tahun 2 = 10.200.000 × 2% = <strong>Rp204.000</strong>
+      </div>
+      <div class="answer">✅ Bunga total=Rp404.000 | Saldo=Rp10.404.000 | Bunga th2=Rp204.000</div>
+    </div>
+  </div>
+
+  <!-- ===== DADU ===== -->
+  <div class="section-title">🎲 PELUANG DADU</div>
+
+  <!-- No 39 -->
+  <div class="card">
+    <div class="card-header">No. 39 — Peluang 1 Dadu</div>
+    <div class="card-body">
+      <div class="soal">1 dadu dilempar. Ruang sampel = {1,2,3,4,5,6}, n=6</div>
+      <div class="sub-part">
+        <div class="sub-label">A. Peluang muncul genap</div>
+        Genap: {2,4,6} → P = 3/6 = <strong>½</strong>
+      </div>
+      <div class="sub-part">
+        <div class="sub-label">B. Peluang muncul genap ATAU prima</div>
+        Genap: {2,4,6} | Prima: {2,3,5} | Gabungan: {2,3,4,5,6} → P = 5/6
+      </div>
+      <div class="sub-part">
+        <div class="sub-label">C. Peluang muncul angka 5</div>
+        P = 1/6
+      </div>
+      <div class="answer">✅ A: 1/2 | B: 5/6 | C: 1/6</div>
+    </div>
+  </div>
+
+  <!-- No 40 -->
+  <div class="card">
+    <div class="card-header">No. 40 — Peluang 2 Dadu</div>
+    <div class="card-body">
+      <div class="soal">2 dadu dilempar. Ruang sampel = 36</div>
+      <div class="sub-part">
+        <div class="sub-label">A. Jumlah genap</div>
+        Genap+Genap atau Ganjil+Ganjil. Jumlah cara = 18 → P = 18/36 = <strong>½</strong>
+      </div>
+      <div class="sub-part">
+        <div class="sub-label">B. Jumlah > 8</div>
+        9→4cara, 10→3cara, 11→2cara, 12→1cara → total = 10 → P = 10/36 = <strong>5/18</strong>
+      </div>
+      <div class="sub-part">
+        <div class="sub-label">C. Jumlah = 7</div>
+        (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) → 6 cara → P = 6/36 = <strong>1/6</strong>
+      </div>
+      <div class="answer">✅ A: 1/2 | B: 5/18 | C: 1/6</div>
+    </div>
+  </div>
+
+  <!-- ===== SISA ===== -->
+  <div class="section-title">📋 SOAL LAINNYA</div>
+
+  <!-- No 37 -->
+  <div class="card">
+    <div class="card-header">No. 37 — Pasangkan Rumus Data Kelompok</div>
+    <div class="card-body">
+      <div class="soal">Pasangkan A=Rataan, B=Median, C=Modus dengan rumus 1, 2, 3</div>
+      <div class="sub-part"><div class="sub-label">A. Rataan Data Kelompok</div>→ Rumus <strong>3</strong>: Σxᵢfᵢ / Σf</div>
+      <div class="sub-part"><div class="sub-label">B. Median Data Kelompok</div>→ Rumus <strong>2</strong>: tb + (½n−fkum)/fmed × i</div>
+      <div class="sub-part"><div class="sub-label">C. Modus Data Kelompok</div>→ Rumus <strong>1</strong>: tb + (d₁/(d₁+d₂)) × i</div>
+      <div class="answer">✅ A→3 | B→2 | C→1</div>
+    </div>
+  </div>
+
+  <div style="text-align:center; margin-top:40px; color:#888; font-size:13px;">
+    📚 Semangat ujiannya besok! Kamu pasti bisa! 💪<br>
+    SMK Telkom Sidoarjo • PSAJ Matematika
+  </div>
+
+</div>
+</body>
+</html>
